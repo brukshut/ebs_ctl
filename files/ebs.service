@@ -1,0 +1,8 @@
+[Unit]
+Description=ebs control script 
+
+[Service]
+ExecStart=/usr/local/sbin/ebs_ctl.sh -d /dev/xvdz -u christian,cgough,contact
+
+[Install]
+WantedBy=multi-user.target
